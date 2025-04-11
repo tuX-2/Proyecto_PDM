@@ -22,7 +22,6 @@ Actualmente, se está implementando la estructura base del proyecto, incluyendo:
   - Nombre común.
   - Coordenadas geográficas (WGS 84 / decimales / UTM zona 14).
   - Diámetro del fuste (cm, valores positivos con decimales).
-    - Posibilidad de agregar dos diámetros para fustes irregulares.
   - Altura del árbol (m).
   - % de hojas, flores y frutos (0 a 100, saltos de 5).
   - Madurez del fruto (si % de frutos > 0).
@@ -31,7 +30,6 @@ Actualmente, se está implementando la estructura base del proyecto, incluyendo:
   - Observaciones generales.
   - Subida de fotos desde cámara, galería o archivos.
 - [ ] Visualización y edición de registros anteriores.
-- [ ] Sincronización futura con una base de datos en la nube (opcional).
 
 ---
 
@@ -52,9 +50,12 @@ Actualmente, se está implementando la estructura base del proyecto, incluyendo:
 
 ## 👥 Equipo
 
-- [@tuX-2](https://github.com/tuX-2)
-- [@ObjectShalvy](https://github.com/ObjectShalvy)
-- [@Omar-art32](https://github.com/Omar-art32)
-- [@GeraSP11](https://github.com/GeraSP11)
+## 👥 Colaboradores
+
+- [@tuX-2](https://github.com/tuX-2) - José González
+- [@ObjectShalvy](https://github.com/ObjectShalvy) - Salvador Luengas
+- [@Omar-art32](https://github.com/Omar-art32) - Omar Jiménez
+- [@GeraSP11](https://github.com/GeraSP11) - Gerardo Cortez
+
 
 ---
