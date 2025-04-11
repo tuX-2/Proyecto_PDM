@@ -50,8 +50,6 @@ Actualmente, se está implementando la estructura base del proyecto, incluyendo:
 
 ## 👥 Equipo
 
-## 👥 Colaboradores
-
 - [@tuX-2](https://github.com/tuX-2) - José González
 - [@ObjectShalvy](https://github.com/ObjectShalvy) - Salvador Luengas
 - [@Omar-art32](https://github.com/Omar-art32) - Omar Jiménez
