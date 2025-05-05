@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
-          
+
             btnCreditos.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -53,6 +53,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
             return insets;
-    });
-}
+        });
+    }
 }
