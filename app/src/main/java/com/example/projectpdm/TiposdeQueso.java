@@ -2,21 +2,26 @@ package com.example.projectpdm;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
+import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.google.android.material.button.MaterialButton;
+import com.google.android.material.navigation.NavigationView;
 
-public class TiposdeQueso extends AppCompatActivity {
+public class TiposdeQueso extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     CardView btnQF;
+    private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,7 @@ public class TiposdeQueso extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_tiposde_queso);
 
+        // Configurar el sistema de insets para el edge-to-edge
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -31,12 +37,65 @@ public class TiposdeQueso extends AppCompatActivity {
             return insets;
         });
 
+        // Configurar el DrawerLayout
+        drawerLayout = findViewById(R.id.drawer_layout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        // Configurar el botón de menú hamburguesa
+        ImageButton menuButton = findViewById(R.id.menu_button);
+        menuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
+
+        // Queso Fresco
         btnQF = findViewById(R.id.tipo1);
         btnQF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(TiposdeQueso.this, CalculadoraQF.class);
                 startActivity(intent);
+            }
+        });
+
+        // TODO añadir tipos de queso
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        // Manejar la navegación del menú
+        int id = item.getItemId();
+
+        if (id == R.id.nav_home) {
+            // Ir a la pantalla principal (MainActivity)
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // Limpia la pila de actividades
+            startActivity(intent);
+        } else if (id == R.id.nav_credits) {
+            // Ir a la pantalla de créditos
+            Intent intent = new Intent(this, Pantalla_creditos.class);
+            startActivity(intent);
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        getOnBackPressedDispatcher().addCallback(this, new androidx.activity.OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                } else {
+                    this.setEnabled(false);
+                    getOnBackPressedDispatcher().onBackPressed();
+                }
             }
         });
     }
