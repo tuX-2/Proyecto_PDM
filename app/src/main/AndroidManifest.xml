@@ -15,14 +15,14 @@
         <activity
             android:name=".Pantalla_creditos"
             android:exported="false" />
-      
-            android:name=".CalculadoraQF"
-            android:exported="false" />
 
         <activity android:name=".TiposdeQueso"
             android:exported="false"/>
 
         <activity android:name=".Pantalla_Menu_administracion"
+            android:exported="false"/>
+
+        <activity android:name=".CalculadoraQF"
             android:exported="false"/>
       
         <activity
