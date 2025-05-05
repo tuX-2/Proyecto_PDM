@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button btnTiposQueso;
+    public Button btnTiposQueso, btnCreditos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +26,19 @@ public class MainActivity extends AppCompatActivity {
 
             // Boton de Tipos de queso
             btnTiposQueso = v.findViewById(R.id.btnTiposQueso);
+            btnCreditos = v.findViewById(R.id.button_creditos);
             btnTiposQueso.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(MainActivity.this, TiposdeQueso.class);
+                    startActivity(intent);
+                }
+            });
+
+            btnCreditos.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, Pantalla_creditos.class);
                     startActivity(intent);
                 }
             });
