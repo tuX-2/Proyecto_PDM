@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ProjectPDM</string>
+    <string name="materia_prima">Materia Prima</string>
 </resources>
