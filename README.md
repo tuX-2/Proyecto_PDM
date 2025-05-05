@@ -1,35 +1,33 @@
-# 🌳 Bitácora de Árboles - Aplicación Android
+# 🧀 Calculadora de Costos de Quesos - Aplicación Android
 
-Esta es una aplicación móvil desarrollada en **Android Studio** que permitirá llevar una **bitácora digital de árboles** durante trabajos de campo o muestreo. La app está diseñada para registrar, almacenar y visualizar datos clave sobre árboles individuales, conforme a criterios técnicos establecidos.
+Esta es una aplicación móvil desarrollada en **Android Studio**, diseñada para **laboratorios de productos pecuarios**. Su propósito es calcular el **costo de mercado** de distintos tipos de **queso**, considerando variables clave como materia prima, insumos y procesos. La app está enfocada en brindar **flexibilidad y precisión** en la estimación de costos en tiempo real.
 
 ## 📱 Estado del Proyecto
 
-🚧 En desarrollo.  
-Actualmente, se está implementando la estructura base del proyecto, incluyendo:
-- Pantalla de **inicio de sesión**.
-- **Base de datos local** para almacenar los registros.
-- Pantalla de **registro de árbol** basada en los criterios del formato oficial.
+🚧 **En desarrollo.**  
+Actualmente, se está construyendo la estructura base del proyecto, incluyendo:
+
+- **Base de datos local** para almacenar configuraciones y cálculos.
+- Interfaz de **registro y edición de parámetros de costos**.
 
 ---
 
 ## 📋 Funcionalidades Planeadas
 
-- [ ] Autenticación de usuarios (login y registro).
 - [ ] Almacenamiento de datos mediante base de datos local (SQLite).
-- [ ] Registro de árboles con los siguientes campos:
-  - Número de árbol (ID único, número natural).
-  - Nombre científico (soporte para cursiva).
-  - Nombre común.
-  - Coordenadas geográficas (WGS 84 / decimales / UTM zona 14).
-  - Diámetro del fuste (cm, valores positivos con decimales).
-  - Altura del árbol (m).
-  - % de hojas, flores y frutos (0 a 100, saltos de 5).
-  - Madurez del fruto (si % de frutos > 0).
-  - Estado de las hojas (si % de hojas > 0).
-  - Interacción interespecífica (con opción de detallar el organismo si aplica).
-  - Observaciones generales.
-  - Subida de fotos desde cámara, galería o archivos.
-- [ ] Visualización y edición de registros anteriores.
+- [ ] Cálculo del costo total y unitario de quesos considerando:
+  - Tipo de queso (Manchego, Oaxaca, Panela, etc.).
+  - Precio y cantidad de **materia prima** (leche, cuajo, sal, etc.).
+  - Costos de **procesamiento** (energía, mano de obra, agua, etc.).
+  - Porcentaje de **merma** o pérdida durante el proceso.
+  - Presentación final (peso del producto, empaque, etiquetado).
+- [ ] **Modificación dinámica** de parámetros:
+  - El usuario podrá **editar los precios base** de insumos.
+  - Se podrán **agregar nuevos ingredientes** o insumos personalizados.
+- [ ] Visualización de resultados:
+  - Desglose del costo por rubros.
+  - Comparativa entre tipos de queso.
+- [ ] Generación de reportes y guardado de cálculos previos.
 
 ---
 
