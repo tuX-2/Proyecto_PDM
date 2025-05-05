@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
 
-public class CalculadoraQB extends AppCompatActivity {
+public class CalculadoraQP extends AppCompatActivity {
 
     MaterialButton btnRegresar;
 
@@ -20,7 +20,7 @@ public class CalculadoraQB extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_calculadora_qb);
+        setContentView(R.layout.activity_calculadora_qp);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -31,7 +31,7 @@ public class CalculadoraQB extends AppCompatActivity {
         btnRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CalculadoraQB.this, TiposdeQueso.class);
+                Intent intent = new Intent(CalculadoraQP.this, TiposdeQueso.class);
                 startActivity(intent);
             }
         });
