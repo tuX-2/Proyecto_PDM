@@ -1,5 +1,6 @@
 package com.example.projectpdm;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -19,9 +20,10 @@ public class Pantalla_Menu_administracion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_pantalla_menu_administracion);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainAdministracion), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            Intent intent = getIntent();
             return insets;
         });
 
