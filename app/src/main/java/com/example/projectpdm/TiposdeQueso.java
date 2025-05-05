@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -15,7 +16,7 @@ import com.google.android.material.button.MaterialButton;
 
 public class TiposdeQueso extends AppCompatActivity {
 
-    MaterialButton btnQF;
+    CardView btnQF;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
