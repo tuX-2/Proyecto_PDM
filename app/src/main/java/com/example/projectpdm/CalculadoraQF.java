@@ -3,26 +3,24 @@ package com.example.projectpdm;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
 
-public class TiposdeQueso extends AppCompatActivity {
+public class CalculadoraQF extends AppCompatActivity {
 
-    CardView btnQF;
+    MaterialButton btnRegresar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_tiposde_queso);
+        setContentView(R.layout.activity_calculadora_qf);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -31,11 +29,11 @@ public class TiposdeQueso extends AppCompatActivity {
             return insets;
         });
 
-        btnQF = findViewById(R.id.tipo1);
-        btnQF.setOnClickListener(new View.OnClickListener() {
+        btnRegresar = findViewById(R.id.btnRegresar);
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TiposdeQueso.this, CalculadoraQF.class);
+                Intent intent = new Intent(CalculadoraQF.this, TiposdeQueso.class);
                 startActivity(intent);
             }
         });
