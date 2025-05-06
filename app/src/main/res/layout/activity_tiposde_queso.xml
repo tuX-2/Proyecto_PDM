@@ -123,7 +123,7 @@
                             android:layout_width="80dp"
                             android:layout_height="50dp"
                             android:src="@drawable/panela"
-                            android:contentDescription="Queso panela" />
+                            android:contentDescription="Queso psnela" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
