@@ -1,8 +1,6 @@
 package com.example.projectpdm;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,25 +10,23 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
 
-public class CalculadoraQF extends AppCompatActivity {
+public class AdminMateriales extends AppCompatActivity {
 
-    MaterialButton btnRegresar;
+    MaterialButton btnRegreso;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_calculadora_qf);
-
+        setContentView(R.layout.activity_admin_materiales);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            Intent intent = getIntent();
             return insets;
         });
 
-        btnRegresar = findViewById(R.id.btnRegresar);
-        btnRegresar.setOnClickListener(v -> {
+        btnRegreso = findViewById(R.id.btnRegresar);
+        btnRegreso.setOnClickListener(v -> {
             finish();
         });
     }

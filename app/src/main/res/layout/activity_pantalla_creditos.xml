@@ -13,43 +13,42 @@
         android:id="@+id/header"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#2b3d8d"
         android:orientation="horizontal"
+        android:background="#2b3d8d"
         android:padding="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
             android:id="@+id/logo"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:contentDescription="imagenLogo"
-            android:src="@drawable/logo_umar"/>
+            android:contentDescription="Logo UMAR"
+            android:src="@drawable/logo_umar" />
 
         <TextView
             android:id="@+id/titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:gravity="center_vertical"
             android:text="Calculadora de precios de venta de Queso"
             android:textColor="@android:color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Contenido de créditos -->
+    <!-- Contenido principal con scroll -->
     <ScrollView
         android:id="@+id/scrollView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@android:color/white"
         android:fillViewport="true"
-        app:layout_constraintBottom_toTopOf="@+id/footer"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@id/footer"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -80,9 +79,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:text="Versión: 1.0.0 (2025)"
-                android:textSize="16sp"
-                android:textColor="#333333" />
+                android:textSize="14sp"
+                android:textColor="#444444" />
 
+            <!-- Separador -->
             <View
                 android:layout_width="100dp"
                 android:layout_height="2dp"
@@ -90,6 +90,7 @@
                 android:layout_marginBottom="16dp"
                 android:background="#2b3d8d" />
 
+            <!-- Sección: Desarrolladores -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -104,10 +105,11 @@
                 android:layout_marginTop="8dp"
                 android:gravity="center"
                 android:lineSpacingExtra="6dp"
-                android:text="Gerardo Cortez Ramos\nJose Enrique Gonzalez Sanchez\nSalvador Sanchez Luengas\nOmar Jimenez Hernandez"
+                android:text="Gerardo Cortez Ramos\nJosé Enrique González Sánchez\nSalvador Sánchez Luengas\nOmar Jiménez Hernández"
                 android:textSize="14sp"
                 android:textColor="#333333" />
 
+            <!-- Separador -->
             <View
                 android:layout_width="80dp"
                 android:layout_height="1dp"
@@ -115,6 +117,7 @@
                 android:layout_marginBottom="16dp"
                 android:background="#CCCCCC" />
 
+            <!-- Sección: Contribuidores -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -133,6 +136,7 @@
                 android:textSize="14sp"
                 android:textColor="#333333" />
 
+            <!-- Separador -->
             <View
                 android:layout_width="80dp"
                 android:layout_height="1dp"
@@ -140,6 +144,7 @@
                 android:layout_marginBottom="16dp"
                 android:background="#CCCCCC" />
 
+            <!-- Sección: Tecnologías -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -171,6 +176,7 @@
         android:text="©UMAR Todos los derechos reservados"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

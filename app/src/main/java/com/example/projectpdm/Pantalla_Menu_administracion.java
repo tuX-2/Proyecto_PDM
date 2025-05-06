@@ -35,28 +35,32 @@ public class Pantalla_Menu_administracion extends AppCompatActivity {
         btnMateriaPrima.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Pantalla_Menu_administracion.this, AdminMateriaPrima.class);
+                startActivity(intent);
             }
         });
 
         btnMateriales.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Pantalla_Menu_administracion.this, AdminMateriales.class);
+                startActivity(intent);
             }
         });
 
         btnManoObra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Pantalla_Menu_administracion.this, AdminManoObra.class);
+                startActivity(intent);
             }
         });
 
         btnCostoGastos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(Pantalla_Menu_administracion.this, AdminCostoGasto.class);
+                startActivity(intent);
             }
         });
 
