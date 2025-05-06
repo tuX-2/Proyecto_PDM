@@ -13,18 +13,71 @@
         android:theme="@style/Theme.ProjectPDM"
         tools:targetApi="31">
         <activity
+            android:name=".AdminCostoGasto"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM"/>
+        <activity
+            android:name=".AdminManoObra"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM"/>
+        <activity
+            android:name=".AdminMateriales"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM"/>
+        <activity
+            android:name=".AdminMateriaPrima"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM"/>
+        <activity
+            android:name=".CalculadoraYG"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM" />
+        <activity
+            android:name=".CalculadoraQC"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM" />
+        <activity
+            android:name=".CalculadoraQM"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM" />
+        <activity
+            android:name=".CalculadoraQQ"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM" />
+        <activity
+            android:name=".CalculadoraQP"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM" />
+        <activity
+            android:name=".CalculadoraQB"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM" />
+        <activity
             android:name=".Pantalla_creditos"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM" />
+        <activity
+            android:name=".TiposdeQueso"
             android:exported="false" />
-
-        <activity android:name=".TiposdeQueso"
-            android:exported="false"/>
-
-        <activity android:name=".Pantalla_Menu_administracion"
-            android:exported="false"/>
-
-        <activity android:name=".CalculadoraQF"
-            android:exported="false"/>
-      
+        <activity
+            android:name=".Pantalla_Menu_administracion"
+            android:exported="false" />
+        <activity
+            android:name=".CalculadoraQF"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjectPDM" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

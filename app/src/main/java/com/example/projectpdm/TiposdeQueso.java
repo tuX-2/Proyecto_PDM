@@ -21,6 +21,12 @@ import com.google.android.material.navigation.NavigationView;
 public class TiposdeQueso extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     CardView btnQF;
+    CardView btnQP;
+    CardView btnQQ;
+    CardView btnQM;
+    CardView btnQC;
+    CardView btnQB;
+    CardView btnYG;
     private DrawerLayout drawerLayout;
 
     @Override
@@ -57,6 +63,66 @@ public class TiposdeQueso extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(TiposdeQueso.this, CalculadoraQF.class);
+                startActivity(intent);
+            }
+        });
+
+        // Queso Panela
+        btnQP = findViewById(R.id.tipo2);
+        btnQP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TiposdeQueso.this, CalculadoraQP.class);
+                startActivity(intent);
+            }
+        });
+
+        // Quesillo
+        btnQQ = findViewById(R.id.tipo3);
+        btnQQ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TiposdeQueso.this, CalculadoraQQ.class);
+                startActivity(intent);
+            }
+        });
+
+        // Queso Manchego
+        btnQM = findViewById(R.id.tipo4);
+        btnQM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TiposdeQueso.this, CalculadoraQM.class);
+                startActivity(intent);
+            }
+        });
+
+        // Queso Chihuahua
+        btnQC = findViewById(R.id.tipo5);
+        btnQC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TiposdeQueso.this, CalculadoraQC.class);
+                startActivity(intent);
+            }
+        });
+
+        // Queso Bola
+        btnQB = findViewById(R.id.tipo6);
+        btnQB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TiposdeQueso.this, CalculadoraQB.class);
+                startActivity(intent);
+            }
+        });
+
+        // Yogurt
+        btnYG = findViewById(R.id.tipo7);
+        btnYG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TiposdeQueso.this, CalculadoraYG.class);
                 startActivity(intent);
             }
         });
