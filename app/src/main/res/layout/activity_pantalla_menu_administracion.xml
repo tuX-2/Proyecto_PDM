@@ -7,198 +7,183 @@
     android:layout_height="match_parent"
     tools:context=".Pantalla_Menu_administracion">
 
+    <!-- HEADER fijo -->
     <LinearLayout
+        android:id="@+id/header"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/white"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="#2b3d8d"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Header con título -->
-        <LinearLayout
-            android:id="@+id/header"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#2b3d8d"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:contentDescription="Logo"
-                android:src="@drawable/logo_umar" />
-
-            <TextView
-                android:id="@+id/titulo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="8dp"
-                android:text="Calculadora de precios de venta de Queso"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo_umar" />
 
         <TextView
-            android:id="@+id/txt_admin"
+            android:id="@+id/titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:text="Administrar"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/header" />
-
-        <!-- Botón 1: Materia Prima -->
-        <!-- Agregamos FrameLayout para contener el botón y la imagen sobresaliente -->
-        <FrameLayout
-            android:id="@+id/frame_materia_prima"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_admin">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_materia_prima"
-                android:layout_width="360dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#F3E5AC"
-                android:gravity="start|center_vertical"
-                android:padding="12dp"
-                android:text="@string/materia_prima"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                app:cornerRadius="10dp" />
-
-            <!-- Imagen sobresaliente -->
-            <ImageView
-                android:id="@+id/img_materia_prima"
-                android:layout_width="80dp"
-                android:layout_height="50dp"
-                android:layout_gravity="end|center_vertical"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="-0dp"
-                android:src="@drawable/materia_prima" />
-        </FrameLayout>
-
-        <!-- Botón 2: Materiales -->
-        <FrameLayout
-            android:id="@+id/frame_materiales"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/frame_materia_prima">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_materiales"
-                android:layout_width="360dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#E8C12F"
-                android:gravity="start|center_vertical"
-                android:padding="12dp"
-                android:text="Materiales"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                app:cornerRadius="10dp" />
-
-            <!-- Imagen sobresaliente -->
-            <ImageView
-                android:id="@+id/img_materiales"
-                android:layout_width="80dp"
-                android:layout_height="50dp"
-                android:layout_gravity="end|center_vertical"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="-0dp"
-                android:src="@drawable/materiales" />
-        </FrameLayout>
-
-        <!-- Botón 3: Mano de Obra -->
-        <FrameLayout
-            android:id="@+id/frame_mano_obra"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/frame_materiales">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_mano_obra"
-                android:layout_width="360dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#F4A460"
-                android:gravity="start|center_vertical"
-                android:padding="12dp"
-                android:text="Mano de Obra"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                app:cornerRadius="10dp" />
-
-            <!-- Imagen sobresaliente -->
-            <ImageView
-                android:id="@+id/img_mano_obra"
-                android:layout_width="80dp"
-                android:layout_height="50dp"
-                android:layout_gravity="end|center_vertical"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="-0dp"
-                android:src="@drawable/mano_obra" />
-        </FrameLayout>
-
-        <!-- Botón 4: Costos/Gastos -->
-        <FrameLayout
-            android:id="@+id/frame_costos_gastos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:layout_marginTop="12dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/frame_mano_obra">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_costos_gastos"
-                android:layout_width="360dp"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#D4B78F"
-                android:gravity="start|center_vertical"
-                android:padding="12dp"
-                android:text="Costos/Gastos"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                app:cornerRadius="10dp" />
-
-            <!-- Imagen sobresaliente -->
-            <ImageView
-                android:id="@+id/img_costos_gastos"
-                android:layout_width="80dp"
-                android:layout_height="40dp"
-                android:layout_gravity="end|center_vertical"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="-0dp"
-                android:src="@drawable/costos" />
-        </FrameLayout>
+            android:layout_marginStart="8dp"
+            android:text="Calculadora de precios de venta de Queso"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Footer -->
+    <!-- CONTENIDO desplazable -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/txt_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrar"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Botones con imágenes sobresalientes -->
+
+            <!-- BOTÓN 1 -->
+            <FrameLayout
+                android:id="@+id/frame_materia_prima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_materia_prima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F3E5AC"
+                    android:gravity="start|center_vertical"
+                    android:padding="12dp"
+                    android:text="@string/materia_prima"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp" />
+
+                <ImageView
+                    android:id="@+id/img_materia_prima"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/materia_prima" />
+            </FrameLayout>
+
+            <!-- BOTÓN 2 -->
+            <FrameLayout
+                android:id="@+id/frame_materiales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_materiales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#E8C12F"
+                    android:gravity="start|center_vertical"
+                    android:padding="12dp"
+                    android:text="Materiales"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp" />
+
+                <ImageView
+                    android:id="@+id/img_materiales"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/materiales" />
+            </FrameLayout>
+
+            <!-- BOTÓN 3 -->
+            <FrameLayout
+                android:id="@+id/frame_mano_obra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_mano_obra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F4A460"
+                    android:gravity="start|center_vertical"
+                    android:padding="12dp"
+                    android:text="Mano de Obra"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp" />
+
+                <ImageView
+                    android:id="@+id/img_mano_obra"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/mano_obra" />
+            </FrameLayout>
+
+            <!-- BOTÓN 4 -->
+            <FrameLayout
+                android:id="@+id/frame_costos_gastos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_costos_gastos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#D4B78F"
+                    android:gravity="start|center_vertical"
+                    android:padding="12dp"
+                    android:text="Costos/Gastos"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp" />
+
+                <ImageView
+                    android:id="@+id/img_costos_gastos"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/costos" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FOOTER fijo -->
     <TextView
         android:id="@+id/footer"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#2B3D8D"
         android:gravity="center"
@@ -208,5 +193,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

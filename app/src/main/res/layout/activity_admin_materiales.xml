@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CalculadoraYG">
+    tools:context=".AdminMateriales">
 
     <!-- HEADER FIJO -->
     <LinearLayout
@@ -70,7 +70,7 @@
                     android:backgroundTint="#feed71"
                     android:gravity="start|center_vertical"
                     android:padding="12dp"
-                    android:text="⬅️ Yogurt"
+                    android:text="⬅️ Materiales"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
                     android:textSize="16sp"
@@ -84,7 +84,7 @@
                     android:layout_gravity="end|center_vertical"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="5dp"
-                    android:src="@drawable/yogurt" />
+                    android:src="@drawable/materiales" />
             </FrameLayout>
 
         </LinearLayout>

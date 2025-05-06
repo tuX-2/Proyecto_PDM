@@ -28,12 +28,8 @@ public class CalculadoraQC extends AppCompatActivity {
         });
 
         btnRegreso = findViewById(R.id.btnRegresar);
-        btnRegreso.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(CalculadoraQC.this, TiposdeQueso.class);
-                startActivity(intent);
-            }
+        btnRegreso.setOnClickListener(v -> {
+            finish();
         });
     }
 }

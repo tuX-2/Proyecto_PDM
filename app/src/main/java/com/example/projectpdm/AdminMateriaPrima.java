@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
 
-public class CalculadoraQM extends AppCompatActivity {
+public class AdminMateriaPrima extends AppCompatActivity {
 
     MaterialButton btnRegreso;
 
@@ -20,7 +20,7 @@ public class CalculadoraQM extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_calculadora_qm);
+        setContentView(R.layout.activity_admin_materia_prima);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
