@@ -144,6 +144,9 @@ public class TiposdeQueso extends AppCompatActivity implements NavigationView.On
             // Ir a la pantalla de créditos
             Intent intent = new Intent(this, Pantalla_creditos.class);
             startActivity(intent);
+        } else if (id == R.id.nav_admin) {
+            Intent intent = new Intent(this, Pantalla_Menu_administracion.class);
+            startActivity(intent);
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);
