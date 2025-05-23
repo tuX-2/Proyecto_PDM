@@ -415,13 +415,13 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Huantes Latex"
+                        android:text="Guantes Latex"
                         android:textSize="16sp"
                         android:textColor="@color/black"
                         android:gravity="center_vertical" />
 
                     <EditText
-                        android:id="@+id/entHuantes"
+                        android:id="@+id/entGuantes"
                         android:layout_width="0dp"
                         android:layout_height="48dp"
                         android:layout_weight="2"
@@ -599,7 +599,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Regrigerador"
+                        android:text="Refrigerador"
                         android:textSize="16sp"
                         android:textColor="@color/black"
                         android:gravity="center_vertical" />
@@ -736,17 +736,102 @@
 
     </ScrollView>
 
-    <!-- FOOTER FIJO -->
-    <TextView
+    <!-- Footer Resultados -->
+    <LinearLayout
         android:id="@+id/footer"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#2B3D8D"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="©UMAR Todos los derechos reservados"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:orientation="vertical"
+        android:background="#f9a825"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cost. Producción:"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/entCP"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:hint="Costo"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:backgroundTint="@color/black"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ganacia:"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/entMG"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:hint="Margen %"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:backgroundTint="@color/black"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Precio de venta:"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/entPV"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:hint="Precio"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:backgroundTint="@color/black"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
