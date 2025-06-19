@@ -54,3 +54,9 @@ Actualmente, se está construyendo la estructura base del proyecto, incluyendo:
 
 
 ---
+##🛡️licencia
+
+**Creative Commons** 
+- Atribución-NoComercial-SinDerivadas 4.0 Internacional (**CC BY-NC-ND 4.0**).
+
+<p align="center"> <a href="[https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es](https://creativecommons.org/licenses/by-nc-nd/4.0/)"> <img src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png" alt="Licencia CC BY-NC-ND 4.0"/> </a> </p>
