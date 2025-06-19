@@ -7,8 +7,9 @@ Esta es una aplicación móvil desarrollada en **Android Studio**, diseñada par
 🚧 **En desarrollo.**  
 Actualmente, se está construyendo la estructura base del proyecto, incluyendo:
 
-- **Base de datos local** para almacenar configuraciones y cálculos.
-- Interfaz de **registro y edición de parámetros de costos**.
+- **Diseño de la interfaz de usuario** amigable y en armonía con la tematica de la aplicación.
+- **Flujo y navegación** a travez de la aplicación.
+- **Eventos** en cuanto a botones y campos para calculos que participan en el flujo de la app.
 
 ---
 
@@ -20,13 +21,11 @@ Actualmente, se está construyendo la estructura base del proyecto, incluyendo:
   - Precio y cantidad de **materia prima** (leche, cuajo, sal, etc.).
   - Costos de **procesamiento** (energía, mano de obra, agua, etc.).
   - Porcentaje de **merma** o pérdida durante el proceso.
-  - Presentación final (peso del producto, empaque, etiquetado).
 - [ ] **Modificación dinámica** de parámetros:
   - El usuario podrá **editar los precios base** de insumos.
   - Se podrán **agregar nuevos ingredientes** o insumos personalizados.
 - [ ] Visualización de resultados:
-  - Desglose del costo por rubros.
-  - Comparativa entre tipos de queso.
+  - Desglose del costo de producción del tipo de queso y precio de venta sugerido por margen de ganancia deseado.
 - [ ] Generación de reportes y guardado de cálculos previos.
 
 ---
