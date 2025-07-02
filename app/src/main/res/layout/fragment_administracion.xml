@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- ScrollView para manejar el desbordamiento -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Contenedor vertical de tipos de administracion para calculos -->
+        <LinearLayout
+            android:id="@+id/contenedor_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="clip_horizontal"
+            android:padding="24dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrar:"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Botones de producto -->
+            <Button
+                android:id="@+id/btnMateriaPrima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E8B86D"
+                android:textColor="@android:color/white"
+                android:text="Materia Prima"
+                android:drawableLeft="@drawable/materia_prima"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnMateriales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E8B86D"
+                android:textColor="@android:color/white"
+                android:text="Materiales"
+                android:drawableLeft="@drawable/materiales"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnManoDeObra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E8B86D"
+                android:textColor="@android:color/white"
+                android:text="Mano de Obra"
+                android:drawableLeft="@drawable/mano_obra"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/btnQuesoCostosGastos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E8B86D"
+                android:textColor="@android:color/white"
+                android:text="Costos/Gastos"
+                android:drawableLeft="@drawable/costos"
+                android:layout_marginBottom="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
