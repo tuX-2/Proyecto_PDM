@@ -1,0 +1,12 @@
+package com.example.calcuquesito.factories;
+
+import com.example.calcuquesito.models.*;
+public class ProductoFactory {
+    public static Producto crearProducto(String tipo) {
+        switch (tipo) {
+            case "Fresco": return new QuesoFresco();
+            // Otros productos en el futuro
+            default: return null;
+        }
+    }
+}
