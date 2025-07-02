@@ -1,4 +1,4 @@
-package com.example.calcuquesito.fragments;
+package com.example.projectpdm.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,8 +10,8 @@ import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import com.example.calcuquesito.R;
-import com.example.calcuquesito.singletons.ConfigManager;
+import com.example.projectpdm.R;
+import com.example.projectpdm.singletons.ConfigManager;
 
 public class AdminFragment extends Fragment {
 

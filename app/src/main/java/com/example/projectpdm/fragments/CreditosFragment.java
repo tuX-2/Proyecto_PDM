@@ -1,4 +1,4 @@
-package com.example.calcuquesito.fragments;
+package com.example.projectpdm.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import com.example.calcuquesito.R;
+import com.example.projectpdm.R;
 
 public class CreditosFragment extends Fragment {
     @Nullable

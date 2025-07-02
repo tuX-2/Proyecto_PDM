@@ -1,4 +1,4 @@
-package com.example.calcuquesito.database;
+package com.example.projectpdm.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

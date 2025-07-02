@@ -1,4 +1,4 @@
-package com.example.calcuquesito.activities;
+package com.example.projectpdm.activities;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.calcuquesito.R;
+import com.example.projectpdm.R;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.textfield.TextInputEditText;
 

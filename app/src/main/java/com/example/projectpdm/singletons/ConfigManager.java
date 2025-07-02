@@ -1,7 +1,7 @@
-package com.example.calcuquesito.singletons;
+package com.example.projectpdm.singletons;
 
 import android.content.Context;
-import com.example.calcuquesito.database.ConfigDBManager;
+import com.example.projectpdm.database.ConfigDBManager;
 
 public class ConfigManager {
     private static ConfigManager instance;
