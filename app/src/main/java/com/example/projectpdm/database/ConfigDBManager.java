@@ -1,4 +1,4 @@
-package com.example.calcuquesito.database;
+package com.example.projectpdm.database;
 
 import android.content.ContentValues;
 import android.content.Context;

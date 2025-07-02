@@ -1,4 +1,4 @@
-package com.example.calcuquesito.fragments;
+package com.example.projectpdm.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,14 +9,14 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import com.example.calcuquesito.R;
-import com.example.calcuquesito.activities.QuesilloActivity;
-import com.example.calcuquesito.activities.QuesoBolaActivity;
-import com.example.calcuquesito.activities.QuesoChihuahuaActivity;
-import com.example.calcuquesito.activities.QuesoFrescoActivity;
-import com.example.calcuquesito.activities.QuesoManchegoActivity;
-import com.example.calcuquesito.activities.QuesoPanelaActivity;
-import com.example.calcuquesito.activities.YoghurtActivity;
+import com.example.projectpdm.R;
+import com.example.projectpdm.activities.QuesilloActivity;
+import com.example.projectpdm.activities.QuesoBolaActivity;
+import com.example.projectpdm.activities.QuesoChihuahuaActivity;
+import com.example.projectpdm.activities.QuesoFrescoActivity;
+import com.example.projectpdm.activities.QuesoManchegoActivity;
+import com.example.projectpdm.activities.QuesoPanelaActivity;
+import com.example.projectpdm.activities.YoghurtActivity;
 
 public class ProductosFragment extends Fragment {
     @Nullable

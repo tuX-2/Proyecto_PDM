@@ -1,6 +1,6 @@
-package com.example.calcuquesito.builders;
+package com.example.projectpdm.builders;
 
-import com.example.calcuquesito.models.PrecioVenta;
+import com.example.projectpdm.models.PrecioVenta;
 
 public class PrecioVentaBuilder {
     private double materiaPrima;

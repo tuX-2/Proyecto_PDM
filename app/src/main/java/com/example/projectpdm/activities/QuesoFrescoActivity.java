@@ -1,4 +1,4 @@
-package com.example.calcuquesito.activities;
+package com.example.projectpdm.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -13,12 +13,12 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.calcuquesito.R;
-import com.example.calcuquesito.models.Producto;
-import com.example.calcuquesito.models.PrecioVenta;
-import com.example.calcuquesito.factories.ProductoFactory;
-import com.example.calcuquesito.builders.PrecioVentaBuilder;
-import com.example.calcuquesito.singletons.ConfigManager;
+import com.example.projectpdm.R;
+import com.example.projectpdm.models.Producto;
+import com.example.projectpdm.models.PrecioVenta;
+import com.example.projectpdm.factories.ProductoFactory;
+import com.example.projectpdm.builders.PrecioVentaBuilder;
+import com.example.projectpdm.singletons.ConfigManager;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.textfield.TextInputEditText;
 

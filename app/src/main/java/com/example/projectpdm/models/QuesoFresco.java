@@ -1,4 +1,4 @@
-package com.example.calcuquesito.models;
+package com.example.projectpdm.models;
 
 public class QuesoFresco extends Producto {
     public QuesoFresco() {

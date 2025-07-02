@@ -1,12 +1,12 @@
-package com.example.calcuquesito.activities;
+package com.example.projectpdm.activities;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.example.calcuquesito.R;
-import com.example.calcuquesito.fragments.*;
+import com.example.projectpdm.R;
+import com.example.projectpdm.fragments.*;
 
 public class MainActivity extends AppCompatActivity {
     @Override

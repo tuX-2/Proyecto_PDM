@@ -1,6 +1,6 @@
-package com.example.calcuquesito.factories;
+package com.example.projectpdm.factories;
 
-import com.example.calcuquesito.models.*;
+import com.example.projectpdm.models.*;
 public class ProductoFactory {
     public static Producto crearProducto(String tipo) {
         switch (tipo) {
